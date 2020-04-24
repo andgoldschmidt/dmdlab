@@ -1,4 +1,0 @@
-Help
-====
-
-Test help.

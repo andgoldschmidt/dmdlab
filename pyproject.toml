@@ -1,11 +1,17 @@
 [tool.poetry]
 name = "pydmd"
 version = "0.1.0"
-description = ""
-authors = ["andy <agoldschmidt11@gmail.com>"]
+description = "Dynamic mode decompositon in python."
+authors = ["Andy Goldschmidt <andygold@uw.edu>"]
+license = "MIT"
+readme = "README.md"
+
 
 [tool.poetry.dependencies]
 python = "^3.7"
+numpy = "^1.18.3"
+scipy = "^1.4.1"
+matplotlib = "^3.2.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

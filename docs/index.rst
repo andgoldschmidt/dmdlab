@@ -1,26 +1,21 @@
-PyDMD Documentation
-=================================
-   :caption: Contents:
+pydmd
+=====
 
+Dynamic Mode Decomposition (DMD) is an algorithm for determining an equation-free representation of a dynamical system
+based on dominant spatiotemporal coherent structures.
 
-Header
-======
-Test text.
+Usage:
 
 .. code-block:: python
 
-    print 'hello'
-    >> hello
-
-Guide
-^^^^^
+    import pydmd
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
+    :caption: Contents:
 
-   license
-   help
-
+    modules
+    license
 
 Indices and tables
 ==================
