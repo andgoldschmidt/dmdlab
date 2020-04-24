@@ -23,21 +23,20 @@ class DMD:
             **kwargs: see Keyword arguments.
 
         Keyword arguments:
-            shift (int): Number of time delays in order to match times in the nonlinear term. default 0.
             threshold (real, int): Truncate the singular values associated with DMD modes. default None.
             threshold_type (str): One of {'number', 'percent'}. default 'percent'.
 
         Attributes:
-            X2:
-            X1:
-            U:
-            t0: Initial time.
-            dt: Step size.
-            orig_timesteps: Original times matching X1.
-            A: Learned drift operator.
-            Atilde: Projected A.
-            eigs: Eigenvalues of Atilde.
-            modes: DMD modes are eigenvectors of Atilde (shared by A).
+            X2 (:obj:`ndarray` of float): Left side data matrix
+            X1 (:obj:`ndarray` of float): Right side data matrix
+            U (:obj:`ndarray` of float): Control signal data matrix
+            t0 (float): Initial time.
+            dt (float): Step size.
+            orig_timesteps (:obj:`ndarray` of float): Original times matching X1.
+            A (:obj:`ndarray` of float): Learned drift operator.
+            Atilde (:obj:`ndarray` of float): Projected A.
+            eigs (list of float): Eigenvalues of Atilde.
+            modes (:obj:`ndarray` of float): DMD modes are eigenvectors of Atilde (shared by A).
         """
         self.X2 = X2
         self.X1 = X1
@@ -153,24 +152,22 @@ class DMDc:
             **kwargs: see Keyword arguments.
 
         Keyword arguments:
-            shift (int): Number of time delays in order to match times in the nonlinear term. default 0.
             threshold (real, int): Truncate the singular values associated with DMD modes. default None.
             threshold_type (str): One of {'number', 'percent'}. default 'percent'.
 
         Attributes:
-            X2:
-            X1:
-            U:
-            Ups: augmented state U*X1.
-            t0: Initial time.
-            dt: Step size.
-            orig_timesteps: Original times matching X1.
-            A: Learned drift operator.
-            Atilde: Projected A.
-            B: Learned control operator.
-            Btilde: Projected B.
-            eigs: Eigenvalues of Atilde.
-            modes: DMD modes are eigenvectors of Atilde (shared by A).
+            X2 (:obj:`ndarray` of float): Left side data matrix
+            X1 (:obj:`ndarray` of float): Right side data matrix
+            U (:obj:`ndarray` of float): Control signal data matrix
+            t0 (float): Initial time.
+            dt (float): Step size.
+            orig_timesteps (:obj:`ndarray` of float): Original times matching X1.
+            A (:obj:`ndarray` of float): Learned drift operator.
+            Atilde (:obj:`ndarray` of float): Projected A.
+            B (:obj:`ndarray` of float): Learned control operator.
+            Btilde (:obj:`ndarray` of float): projected B.
+            eigs (list of float): Eigenvalues of Atilde.
+            modes (:obj:`ndarray` of float): DMD modes are eigenvectors of Atilde (shared by A).
         """
         self.X1 = X1
         self.X2 = X2
@@ -291,19 +288,19 @@ class biDMD:
             threshold_type (str): One of {'number', 'percent'}. default 'percent'.
 
         Attributes:
-            X2:
-            X1:
-            U:
-            Ups: augmented state U*X1.
-            t0: Initial time.
-            dt: Step size.
-            orig_timesteps: Original times matching X1.
-            A: Learned drift operator.
-            Atilde: Projected A.
-            B: Learned nonlinear control operator.
-            Btilde: projected B.
-            eigs: Eigenvalues of Atilde.
-            modes: DMD modes are eigenvectors of Atilde (shared by A).
+            X2 (:obj:`ndarray` of float): Left side data matrix
+            X1 (:obj:`ndarray` of float): Right side data matrix
+            U (:obj:`ndarray` of float): Control signal data matrix
+            Ups (:obj:`ndarray` of float): augmented state U*X1.
+            t0 (float): Initial time.
+            dt (float): Step size.
+            orig_timesteps (:obj:`ndarray` of float): Original times matching X1.
+            A (:obj:`ndarray` of float): Learned drift operator.
+            Atilde (:obj:`ndarray` of float): Projected A.
+            B (:obj:`ndarray` of float): Learned nonlinear control operator.
+            Btilde (:obj:`ndarray` of float): projected B.
+            eigs (list of float): Eigenvalues of Atilde.
+            modes (:obj:`ndarray` of float): DMD modes are eigenvectors of Atilde (shared by A).
         """
         self.U = U
         self.X1 = X1
@@ -464,20 +461,20 @@ class biDMDc:
             threshold_type (str): One of {'number', 'percent'}. default 'percent'.
 
         Attributes:
-            X2:
-            X1:
-            U:
-            Ups: augmented state U*X1.
-            t0: Initial time.
-            dt: Step size.
-            orig_timesteps: Original times matching X1.
-            A: Learned drift operator.
-            Atilde: Projected A.
-            B: Learned nonlinear control operator.
-            Btilde: projected B.
-            D: Learned control operator.
-            eigs: Eigenvalues of Atilde.
-            modes: DMD modes are eigenvectors of Atilde (shared by A).
+            X2 (:obj:`ndarray` of float): Left side data matrix
+            X1 (:obj:`ndarray` of float): Right side data matrix
+            U (:obj:`ndarray` of float): Control signal data matrix
+            Ups (:obj:`ndarray` of float): augmented state U*X1.
+            t0 (float): Initial time.
+            dt (float): Step size.
+            orig_timesteps (:obj:`ndarray` of float): Original times matching X1.
+            A (:obj:`ndarray` of float): Learned drift operator.
+            Atilde (:obj:`ndarray` of float): Projected A.
+            B (:obj:`ndarray` of float): Learned nonlinear control operator.
+            Btilde (:obj:`ndarray` of float): projected B.
+            D (:obj:`ndarray` of float): Learned control operator.
+            eigs (list of float): Eigenvalues of Atilde.
+            modes (:obj:`ndarray` of float): DMD modes are eigenvectors of Atilde (shared by A).
         """
         self.U = U
         self.X1 = X1

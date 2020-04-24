@@ -1,6 +1,10 @@
 Main module (pydmd.dmd)
 =======================
 
+The dynamic mode decomposition is a regression technique for discovering the global dynamical operator describing
+a state space dynamical system from measurement data. The discovered operator is decomposed into the dominant
+spatiotemporal coherent structures stored as eigenvalues and DMD modes.
+
 .. automodule:: pydmd.dmd
 
 DMD
