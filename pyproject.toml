@@ -13,12 +13,16 @@ numpy = "^1.18.3"
 scipy = "^1.4.1"
 matplotlib = "^3.2.1"
 
-
-[tool.poetry.dev-dependencies]
+# docs
 pytest = "^5.2"
 sphinx = "^3.0.2"
 nbsphinx = "^0.6.1"
 
+[tool.poetry.extras]
+docs = ["sphonx",
+        "nbsphinx"]
+
+test = ["pytest"]
 
 [build-system]
 requires = ["poetry>=0.12"]
