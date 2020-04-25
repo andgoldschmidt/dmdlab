@@ -7,6 +7,8 @@
    :alt: MIT License
  
 Dynamic mode decomposition (DMD)is a tool for analyzing the dynamics of nonlinear systems.
+
+This is an experimental DMD codebase for research purposes. A professionally maintained open source DMD codebase for Python exists at https://mathlab.github.io/PyDMD/.
  
 .. rubric:: References
 .. [TRLB14] Tu, J.H.; Rowley, C.W.; Luchtenburg, D.M.; Brunton, S.L.; Kutz, J.N.: On dynamic mode decomposition,  Theory and applications. In: Journal of Computational Dynamics
