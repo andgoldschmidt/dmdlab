@@ -1,7 +1,7 @@
-pydmd
-=====
-PYthon Dynamic Mode Decomposition
----------------------------------
+dmdlab
+======
+Dynamic Mode Decomposition in Python
+------------------------------------
 
 Dynamic Mode Decomposition (DMD) is an algorithm for determining an equation-free representation of a dynamical system
 based on dominant spatiotemporal coherent structures.
@@ -10,14 +10,15 @@ Installation:
 
 .. code-block:: python
 
-    pip install pydmd
+    pip install dmdlab
 
 
 Usage:
 
 .. code-block:: python
 
-    from pydmd import DMD
+    from dmdlab import DMD
+
 
 .. toctree::
     :maxdepth: 2
