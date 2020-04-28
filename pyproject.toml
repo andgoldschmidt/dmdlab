@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dmdlab"
-version = "0.1.0"
+version = "0.1.1"
 description = "Dynamic mode decompositon in python."
 authors = ["Andy Goldschmidt <andygold@uw.edu>"]
 license = "MIT"
