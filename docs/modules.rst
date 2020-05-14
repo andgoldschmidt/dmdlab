@@ -1,59 +1,59 @@
-Main module (pydmd.dmd)
-=======================
+Main module (dmdlab.dmd)
+========================
 
 The dynamic mode decomposition is a regression technique for discovering the global dynamical operator describing
 a state space dynamical system from measurement data. The discovered operator is decomposed into the dominant
 spatiotemporal coherent structures stored as eigenvalues and DMD modes.
 
-.. automodule:: pydmd.dmd
+.. automodule:: dmdlab.dmd
 
 DMD
 ---
 Dynamic mode decomposition.
 
-.. autofunction:: pydmd.dmd.DMD.__init__
+.. autofunction:: dmdlab.dmd.DMD.__init__
 
-.. autoclass:: pydmd.dmd.DMD
+.. autoclass:: dmdlab.dmd.DMD
     :members:
 
 DMDc
 ----
 Dynamic mode decomposition with control.
 
-.. autofunction:: pydmd.dmd.DMDc.__init__
+.. autofunction:: dmdlab.dmd.DMDc.__init__
 
-.. autoclass:: pydmd.dmd.DMDc
+.. autoclass:: dmdlab.dmd.DMDc
     :members:
 
 BiDMD
 -----
 Bilinear dynamic mode decomposition.
 
-.. autofunction:: pydmd.dmd.biDMD.__init__
+.. autofunction:: dmdlab.dmd.biDMD.__init__
 
-.. autoclass:: pydmd.dmd.biDMD
+.. autoclass:: dmdlab.dmd.biDMD
     :members:
 
 BiDMDc
 ------
 Bilinear dynamic mode decomposition with control.
 
-.. autofunction:: pydmd.dmd.biDMDc.__init__
+.. autofunction:: dmdlab.dmd.biDMDc.__init__
 
-.. autoclass:: pydmd.dmd.biDMDc
+.. autoclass:: dmdlab.dmd.biDMDc
     :members:
 
 
-Data processing utilities (pydmd.process)
-=========================================
+Data processing utilities (dmdlab.process)
+==========================================
 
-.. automodule:: pydmd.process
+.. automodule:: dmdlab.process
     :members:
 
 
-Plotting utilities (pydmd.plot)
-===============================
+Plotting utilities (dmdlab.plot)
+================================
 
-.. automodule:: pydmd.plot
+.. automodule:: dmdlab.plot
     :members:
 
